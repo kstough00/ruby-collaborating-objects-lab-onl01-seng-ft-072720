@@ -8,17 +8,15 @@ class Artist
   end
 
   def add_song(song)
-    self.songs << song    #Artist.songs reader returns all songs 
-                          #stored in @songs
+    self.songs << song
   end
 
   def save
-    @@all << self     #saves all created instances of Artist class in 
-                      #@@all class variable
+    @@all << self
   end
 
   def self.all
-    @@all
+    return @@all
   end
 
   def self.find_or_create_by_name(name)
