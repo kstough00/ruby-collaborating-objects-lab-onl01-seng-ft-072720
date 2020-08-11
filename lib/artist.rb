@@ -2,11 +2,9 @@ class Artist
   attr_accessor :name, :songs
   @@all = [] 
 
-  def initialize(name, artist=nil)
+  def initialize(name)
     @name = name
-    @artist = artist
     @songs = []
-    @all << self
   end
 
   def add_song(song)
@@ -46,22 +44,6 @@ class Artist
 		end 
 	end
 end
-
-# class Artist 
-#   attr_accessor :name
-#   @@all = []
-#   def initialize(name, artist=nil)
-#     @name = name
-#     @artist = artist
-#     @@all << self
-#   end
-#   def save
-#     @@all << self
-#   end
-#   def self.all
-#     @@all
-#   end
-# end
 
 
 
