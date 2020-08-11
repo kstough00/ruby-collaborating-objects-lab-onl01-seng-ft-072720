@@ -52,7 +52,7 @@ class Artist
   def initialize(name, artist=nil)
     @name = name
     @artist = artist
-    
+    @@all << self
   end
   def save
     @@all << self
