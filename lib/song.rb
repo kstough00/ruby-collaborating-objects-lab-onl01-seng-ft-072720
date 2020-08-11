@@ -8,7 +8,8 @@ class Song
   end
   
   def song.all
-    
+    @@all
+  end
   
   def artist_name=(name)
     self.artist = Artist.find_or_create_by_name(name)
