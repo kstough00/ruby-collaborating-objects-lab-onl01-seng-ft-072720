@@ -16,7 +16,7 @@ class Artist
   end
 
   def self.all
-    return @@all
+    @@all
   end
 
   def self.find_or_create_by_name(name)
